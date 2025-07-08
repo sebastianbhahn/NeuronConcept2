@@ -10,3 +10,6 @@ The system is meant to run in cycles, loops.
 semi-asynchronous, but I think I was going to rework part of the reward system and neuron placement system 
 (which isn't finished) to be synchronous and get rid of some taskthreads,
 if I haven't already. It's been some time since I messed with this. Wanted a more finished version before uploading it but I lost interest.
+At a glance, it looks like the most recent, up to date code is in new.cpp, but I haven't ported a lot of the functions from the original main.cpp.
+So I was remaking this again before finishing it.
+Probably part of why I lost interest.
