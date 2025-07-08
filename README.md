@@ -1,5 +1,5 @@
 I made this a few months ago, second attempt, or second variant, of a neuron/brain design. 
-Never finished the first attempt, wanted to remake it from scratch, the old attempt is also on this gethub, named "experimentalMLThing".
+Never finished the first attempt, wanted to remake it from scratch, the old attempt is also on this github, named "experimentalMLThing".
 Spent some time on this, didn't bother finishing it once I got the core concepts in place.
 If it isn't in one of the "todo" files, the idea is to have more neuron types, specifically input and output types, 
 tied to, on the input side, a individual pixels for "eyesight", and also frequency inputs for sound, for example, and vice versa as an output.
