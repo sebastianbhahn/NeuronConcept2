@@ -7,5 +7,6 @@ Not sure what base structure would be good for an initial starting point to star
 Not sure what other neuron types might be useful, or not.
 This model is supposed to learn to train itself eventually. For real time learning.
 The system is meant to run in cycles, loops.
-semi-asynchronous, but I think I was going to rework part of the reward system to be synchronous and get rid of some taskthreads,
+semi-asynchronous, but I think I was going to rework part of the reward system and neuron placement system 
+(which isn't finished) to be synchronous and get rid of some taskthreads,
 if I haven't already. It's been some time since I messed with this. Wanted a more finished version before uploading it but I lost interest.
