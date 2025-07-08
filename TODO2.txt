@@ -1,0 +1,20 @@
+doesn't depreciate older todo
+
+add back in same-time neuron firing tracking
+maybe have a seperate interval specific function to create new neurons.
+new neurons between two other neurons should start with a 0.10 strength maybe? idk.
+
+//-------------------------
+
+since feedback can feasibly run concurrently,
+have reward neuron have 3 modes.
+
+enum class RewardMode {training, slowAuto, fastAuto}
+
+RewardMode mode = RewardMode::training; //(default setting)
+
+training: just a count, gets a scaled boost every training input depending on (capped) number of directionally accurate fires. (reset count after)
+slowAuto: send 1 directional reward point based on the average of 100 neuron fires, after 100 neuron fires. (not scaled)
+fastAuto: send 1 directional reward point based on the average of 10 neuron fires, after 10 neuron fires. (not scaled)
+
+//---------------

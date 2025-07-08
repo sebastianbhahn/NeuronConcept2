@@ -1,0 +1,33 @@
+
+Add an optional array for 2 output neurons to the reward neuron type.{
+ensure that these neurons are placed and connected via synapses when the reward neuron is created.
+ask copilot how to do that in a way compatible with a constructor for optional variables. 
+}
+
+set up a threaded atomic/mutex function with a countdown timer to indicate when activity 
+has stopped which resets the timer to max every time a neuron fires.
+(only for use when training, eventually, input and output will be simultaneous, running a number of times a second or faster)
+
+
+Add helper functions to create neurons and synapses at arbitrary positions.
+Figure out other input/output configurations.
+Begin to thing about prodecural neuron placement.
+
+for now, figure out how to input and output a specific size of some image format, whatever is simplest.
+make a dataset of various images labeled with text.
+such as "image of the color red", "image of a german shepherd dog", "image of an oak tree", etc.
+
+hm, or better yet, have 2 inputs and outputs for images. one each for visual information and for visual representations of text.
+Shorten titles to "the color red", "a german shepherd dog", "an oak tree" and such
+
+set up a way to build a network from a json file or something similar.
+This can be used to set up base neural structures,
+then later, also used for saving a model.
+
+change reward calculation to focus more on reward neuron synapses maybe
+
+move tickin to synapse;
+or something. want to change neurons to full thread objects, or something.
+reference a clock for tickout. may do same for synapses.
+maybe only run synapse code if charged; set a flag in neuron from synapse is any signal is pushed to indicate a change.
+still have neuron work out any residual charge, but then go fully dormant after if no new signal recieved.

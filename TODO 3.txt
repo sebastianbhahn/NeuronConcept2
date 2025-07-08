@@ -1,0 +1,12 @@
+consider removing precise float math, if intigers can be divided
+(ask copilot)
+
+for awake neurons, instead of making task threads, maybe make a vector of active neurons.
+Add an neuron to that list when awake, that list can cycle though all wakeful neurons in a tick.
+Neurons when going to sleep will remove themselves from the vector.
+Maybe even make two more vectors of neurons to wake, neurons to put to sleep.
+between ticks, compare the list first, if a neuron is in both lists, leave it awake.
+otherwise, add neurons in the wake list to the awake list,
+then remove neurons in the sleep list from the awake list.
+then perform the next tick (running all neurons).
+should limit active task threads. might be slower on some powerful systems, may not matter.
