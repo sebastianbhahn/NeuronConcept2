@@ -4,7 +4,7 @@ Spent some time on this, didn't bother finishing it once I got the core concepts
 If it isn't in one of the "todo" files, the idea is to have more neuron types, specifically input and output types, 
 tied to, on the input side, a individual pixels for "eyesight", and also frequency inputs for sound, for example, and vice versa as an output.
 Not sure what base structure would be good for an initial starting point to start training the brain from.
-Not sure what other neuron types might eb useful, or not.
+Not sure what other neuron types might be useful, or not.
 This model is supposed to learn to train itself eventually. For real time learning.
 The system is meant to run in cycles, loops.
 semi-asynchronous, but I think I was going to rework part of the reward system to be synchronous and get rid of some taskthreads,
