@@ -44,7 +44,7 @@ struct Synapse {
 
 	std::string parentNeuronHash;
 	std::string childNeuronHash;
-	//manually set neuron strength to 100 when setting up bas netowrk synapses
+	//manually set neuron strength to 100 when setting up base netowrk synapses
 	//cap total value at maybe 1000
 	int strength = 1;
 
